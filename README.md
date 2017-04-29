@@ -9,7 +9,7 @@ Disable virtualenv (>=14)'s downloading behaviour when running through tox.
 ## Wait, why?
 
 A few goals for test suites are *repeatability* and *speed*.  In modern
-versions of virtualenv (>14), `virtualenv` will reach out to pypi to download
+versions of virtualenv (>=14), `virtualenv` will reach out to pypi to download
 the latest version of `pip`, `setuptools`, and `wheel` even when it has a
 perfectly good copy of the wheeled packages on disk.
 
