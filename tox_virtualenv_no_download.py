@@ -4,10 +4,11 @@ from __future__ import unicode_literals
 import contextlib
 import os
 
+import pluggy
 import tox.venv
-from tox import hookimpl
 
 
+hookimpl = pluggy.HookimplMarker('tox')
 NO_DOWNLOAD = 'VIRTUALENV_NO_DOWNLOAD'
 
 
