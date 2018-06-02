@@ -3,7 +3,6 @@ dist: trusty
 services: docker
 env:
     - PYTHON=python2.7
-    - PYTHON=python3.5
     - PYTHON=python3.6
     - PYTHON=pypy
 install: pip install virtualenv

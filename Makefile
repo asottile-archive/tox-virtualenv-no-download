@@ -13,4 +13,4 @@ test: venv
 .PHONY: test-docker_%
 test-docker_%:
 	docker build -t tox-virtualenv-no-download_$* --build-arg PYTHON=$* .
-	docker run --net=none tox-virtualenv-no-download_$*
+	docker run --rm --net=none tox-virtualenv-no-download_$*
