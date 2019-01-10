@@ -5,7 +5,7 @@ setup(
     name='tox-virtualenv-no-download',
     description="Disable virtualenv's download-by-default in tox",
     url='https://github.com/asottile/tox-virtualenv-no-download',
-    version='1.0.2',
+    version='1.0.3',
 
     author='Anthony Sottile',
     author_email='asottile@umich.edu',
