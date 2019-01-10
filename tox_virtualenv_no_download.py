@@ -1,4 +1,5 @@
 from __future__ import absolute_import
+from __future__ import unicode_literals
 
 import contextlib
 import os
@@ -7,13 +8,13 @@ import tox.venv
 from tox import hookimpl
 
 
-NO_DOWNLOAD = 'VIRTUALENV_NO_DOWNLOAD'
+NO_DOWNLOAD = str('VIRTUALENV_NO_DOWNLOAD')
 
 
 @contextlib.contextmanager
 def _virtualenv_no_download():
     orig = os.environ.get(NO_DOWNLOAD)
-    os.environ[NO_DOWNLOAD] = '1'
+    os.environ[NO_DOWNLOAD] = str('1')
     try:
         yield
     finally:
