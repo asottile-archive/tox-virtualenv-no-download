@@ -1,5 +1,4 @@
 language: python
-dist: trusty
 services: docker
 env:
     - PYTHON=python2.7
