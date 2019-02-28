@@ -9,7 +9,7 @@ RUN : \
     && rm -rf /var/lib/apt/lists/*
 
 ENV PATH=/venv/bin:$PATH
-ADD setup.py tox_virtualenv_no_download.py /code/
+ADD . /code/
 RUN virtualenv /venv -p $PYTHON && pip install /code
 
 WORKDIR /example
