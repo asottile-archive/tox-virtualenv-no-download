@@ -1,3 +1,10 @@
+# OBSOLETE
+
+As of [tox 3.10.0](https://tox.readthedocs.io/en/latest/changelog.html#v3-10-0-2019-05-13)
+this project is now unnecessary and the default behaviour of tox.
+
+***
+
 [![Build Status](https://travis-ci.org/asottile/tox-virtualenv-no-download.svg?branch=master)](https://travis-ci.org/asottile/tox-virtualenv-no-download)
 
 tox-virtualenv-no-download
